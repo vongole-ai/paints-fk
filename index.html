@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#ffeae0",
+                        "on-error-container": "#93000a",
+                        "primary": "#994125",
+                        "surface": "#fff8f6",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#121f0d",
+                        "on-secondary-container": "#5a6951",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#faddce",
+                        "on-primary-fixed": "#3a0a00",
+                        "tertiary-fixed": "#ffddba",
+                        "inverse-on-surface": "#ffede5",
+                        "surface-tint": "#9c4327",
+                        "primary-fixed": "#ffdbd1",
+                        "background": "#fff8f6",
+                        "primary-container": "#b8583b",
+                        "on-secondary-fixed-variant": "#3c4b35",
+                        "on-primary-fixed-variant": "#7d2c12",
+                        "secondary-fixed": "#d7e8ca",
+                        "surface-container-high": "#ffe2d5",
+                        "on-surface": "#271810",
+                        "tertiary-fixed-dim": "#fdb96a",
+                        "inverse-surface": "#3e2d23",
+                        "on-tertiary-fixed": "#2b1700",
+                        "surface-container-low": "#fff1eb",
+                        "surface-bright": "#fff8f6",
+                        "outline": "#89726c",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#bbccaf",
+                        "surface-variant": "#faddce",
+                        "primary-fixed-dim": "#ffb59f",
+                        "surface-dim": "#f1d4c6",
+                        "on-error": "#ffffff",
+                        "secondary": "#54634c",
+                        "outline-variant": "#dcc1b9",
+                        "on-tertiary-container": "#fffbff",
+                        "on-background": "#271810",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "inverse-primary": "#ffb59f",
+                        "on-tertiary-fixed-variant": "#663d00",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#835106",
+                        "on-surface-variant": "#56423d",
+                        "secondary-container": "#d7e8ca",
+                        "tertiary-container": "#9f6921"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "xl": "8rem",
+                        "container-max": "1120px",
+                        "md": "2rem",
+                        "sm": "1rem",
+                        "lg": "4rem",
+                        "xs": "0.5rem",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Newsreader"],
+                        "headline-lg": ["Newsreader"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Newsreader"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                        "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.paper-grain {
+    background-color: #fff8f6;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBUCCVQy38ErLUbWKMdW194qlQyOZ2q1qmfNAzFNL_unG0hZ9qFeZfzbMFIPRN7xmK5NRMPuSUGzIweYD3fg51DRnXhYhPYZeuADQUhSKtM-UH4G1r0tGEPRiaFyrQRaldawLOoc2D3W5VCvS9PWRUIbVo_zI5IVT7j9LSEW07pZfSReIUXcmr6Qqm8M2u_xoTnxmodk281BsZsoCCHgAHK7QcWedZ7Q0KIzwH-4aMD9s93vlWc0uTqMMI2aR-s23Glr-d9KrUGE-g);
+    background-repeat: repeat
+    }
+.deckle-divider {
+    height: 24px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #b8583b 50%, transparent);
+    mask-image: url("data:image/svg+xml;utf8,<svg viewBox=\"0 0 100 10\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 5 Q 2.5 0 5 5 T 10 5 T 15 5 T 20 5 T 25 5 T 30 5 T 35 5 T 40 5 T 45 5 T 50 5 T 55 5 T 60 5 T 65 5 T 70 5 T 75 5 T 80 5 T 85 5 T 90 5 T 95 5 T 100 5\" stroke=\"black\" fill=\"transparent\"/></svg>");
+    opacity: 0.3
+    }
+.painterly-mask {
+    mask-image: radial-gradient(circle at center, black 40%, transparent 90%)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="paper-grain text-on-surface selection:bg-primary/20">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#FDFCFB] dark:bg-stone-900 border-b border-stone-200/40 dark:border-stone-800 shadow-[0_8px_30px_rgb(78,59,49,0.04)]">
+<div class="max-w-[1120px] mx-auto px-8 py-6 flex justify-between items-center w-full">
+<div class="flex items-center gap-4 cursor-pointer transition-transform duration-300 active:scale-95">
+<span class="material-symbols-outlined text-[#BC5B3D] dark:text-orange-400">menu</span>
+<span class="text-2xl font-serif italic text-stone-800 dark:text-stone-100 tracking-tighter">Flavia Kudach</span>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#BC5B3D] dark:text-orange-300 border-b border-[#BC5B3D] pb-1 font-serif text-lg tracking-tight italic hover:opacity-80 transition-all duration-500" href="#">Home</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-lg tracking-tight italic hover:text-[#BC5B3D] hover:opacity-80 transition-all duration-500" href="#">Portfolio</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-lg tracking-tight italic hover:text-[#BC5B3D] hover:opacity-80 transition-all duration-500" href="#">Workshops</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-lg tracking-tight italic hover:text-[#BC5B3D] hover:opacity-80 transition-all duration-500" href="#">Journal</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-serif italic hover:opacity-90 transition-all active:scale-95">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex flex-col justify-center overflow-hidden">
+<div class="max-w-[1120px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Hero Content -->
+<div class="md:col-span-7 flex flex-col items-start gap-8">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block">Artist &amp; Therapist</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface leading-none">
+                            Flavia <span class="italic text-primary">Kudach</span>
+</h1>
+</div>
+<p class="font-headline-md text-headline-md italic text-on-surface-variant max-w-lg">
+                        Art that heals. Words that move.
+                    </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-body-lg text-body-lg flex items-center gap-3 shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all active:scale-[0.98]">
+                            Explore the Gallery
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-[1.5px] border-outline text-on-surface px-10 py-4 rounded-xl font-body-lg text-body-lg italic hover:bg-surface-container-low transition-all active:scale-[0.98]">
+                            Read the Journal
+                        </button>
+</div>
+</div>
+<!-- Hero Image (Artistic Portrait) -->
+<div class="md:col-span-5 relative group">
+<div class="absolute inset-0 bg-surface-container rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-3xl opacity-40 scale-110 -z-10 group-hover:rotate-6 transition-transform duration-1000"></div>
+<div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-primary/5">
+<img alt="Flavia Kudach Artistic Portrait" class="w-full h-[600px] object-cover painterly-mask grayscale hover:grayscale-0 transition-all duration-1000" src="./flavia.jpg"/>
+</div>
+<!-- Overlapping Painterly Element -->
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-surface-container-highest/60 backdrop-blur-md rounded-full border border-primary/10 flex items-center justify-center p-8 text-center animate-pulse">
+<span class="font-headline-md text-headline-md italic text-primary">Intention</span>
+</div>
+</div>
+</div>
+<!-- Background Painterly Textures -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-surface-container/30 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-1/4 h-2/3 bg-gradient-to-tr from-surface-container-low/40 to-transparent pointer-events-none"></div>
+</section>
+<!-- Deckle Divider -->
+<div class="max-w-[800px] mx-auto py-16">
+<div class="deckle-divider"></div>
+</div>
+<!-- Featured Philosophy Section (Asymmetric Bento) -->
+<section class="max-w-[1120px] mx-auto px-gutter pb-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Large Card -->
+<div class="md:col-span-2 bg-surface-container-low p-12 rounded-3xl flex flex-col justify-between gap-12 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-primary-container mb-4 block">The Approach</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Creativity as a form of <br/><span class="italic">somatic exploration</span>.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                            My practice weaves together the tactile reality of physical art with the ethereal nature of emotional processing. Here, every stroke is a breath, and every word is a step toward grounding.
+                        </p>
+</div>
+<div class="flex items-center gap-4 relative z-10">
+<div class="h-px flex-1 bg-outline-variant"></div>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary flex items-center gap-2" href="#">
+                            Our Methodology <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<!-- Decorative texture -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+</div>
+<!-- Small Card 1 -->
+<div class="bg-surface-container-high p-10 rounded-3xl flex flex-col items-center text-center gap-6 group hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">palette</span>
+<h3 class="font-headline-md text-headline-md">Visual Art</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Abstract forms that translate what language cannot reach.</p>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-high p-10 rounded-3xl flex flex-col items-center text-center gap-6 group hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<h3 class="font-headline-md text-headline-md">Written Word</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Poetry and prose designed to create a sanctuary in the mind.</p>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-2 relative h-[400px] rounded-3xl overflow-hidden shadow-xl shadow-primary/5">
+<img alt="Artist Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_SFao-hlaF9lVlluA8RztIgAw9wATaTgs-iozRbYZq-QBxSt-WnSbOzKCfYfkwK0MBLPuOPmttJtjXfkDoX3OFU1CIcALAzVpdmLk2nnAKWt6TJr3zPvK0O63ZE5pxvRlCbxi3yRGcywqVwBS11jOdI8TrCAvPXLphCBdOijy7ZIW7XlD32P7Fj1zR6Xl184y9KyMPUy7xQVGrXNMEbNq800zBRtW00E3-rSSTYPx4Dy2aink9fwcKyt5vb-Rh1FgFp32hpgroas"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-12">
+<span class="font-label-sm text-label-sm text-surface-container mb-2 block">Ongoing Series</span>
+<h3 class="font-headline-lg text-headline-lg text-white">The Pedacitos Project</h3>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F9F7F2] dark:bg-stone-950 border-t-[1.5px] border-stone-200/60 dark:border-stone-800 border-dashed">
+<div class="max-w-[1120px] mx-auto px-10 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-serif text-stone-700 dark:text-stone-300">Flavia Kudach</span>
+<p class="text-stone-400 dark:text-stone-600 font-serif text-sm tracking-widest uppercase">© 2024 Flavia Kudach — Created with Intention</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#BC5B3D] underline underline-offset-4 font-serif text-sm tracking-widest uppercase ease-in-out duration-200" href="#">Portfolio</a>
+<a class="text-stone-400 dark:text-stone-600 hover:text-stone-800 dark:hover:text-stone-200 font-serif text-sm tracking-widest uppercase transition-colors duration-300 ease-in-out duration-200" href="#">Workshops</a>
+<a class="text-stone-400 dark:text-stone-600 hover:text-stone-800 dark:hover:text-stone-200 font-serif text-sm tracking-widest uppercase transition-colors duration-300 ease-in-out duration-200" href="#">Pedacitos</a>
+<a class="text-stone-400 dark:text-stone-600 hover:text-stone-800 dark:hover:text-stone-200 font-serif text-sm tracking-widest uppercase transition-colors duration-300 ease-in-out duration-200" href="#">Journal</a>
+<a class="text-stone-400 dark:text-stone-600 hover:text-stone-800 dark:hover:text-stone-200 font-serif text-sm tracking-widest uppercase transition-colors duration-300 ease-in-out duration-200" href="#">Inquiry</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full flex items-center justify-center border border-stone-200 text-stone-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full flex items-center justify-center border border-stone-200 text-stone-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
